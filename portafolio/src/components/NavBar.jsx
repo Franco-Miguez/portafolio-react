@@ -1,28 +1,70 @@
-import {useState} from 'react'
-import iconImage from '../assets/img/icon.svg'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { useState } from "react";
+import iconImage from "../assets/img/icon.svg";
+import { AiOutlineClose, AiOutlineCloseCircle } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
+import LinkNavBar from "./LinkNavBar";
 
 function NavBar() {
-    const [burgerActivate, setBurgerActivate] = useState(false)
+    const [menuClick, setMenuClick] = useState(false);
+    const chaneMenu = () => setMenuClick(!menuClick);
 
-    return<nav className="flex flex-col bg-gray-900 h-15">
-        <div className='flex justify-around mt-4 mb-4 '>
-            <div className='flex gap-2'>
-                <img src={iconImage} alt="icon" className="h-7" />
-                <span className='text-xl'>Franco Miguez</span>
+    return (
+        <nav>
+            <div className="h-20  flex justify-between px-4 shadow-xl shadow-blue-500 bg-gray-900">
+                <div className="flex items-center h-full">
+                    <img className="h-3/5" src={iconImage} alt="Logo" />
+                    <span className="text-lg pl-2 font-bold">
+                        Franco Miguez
+                    </span>
+                </div>
+                <button onClick={chaneMenu} className="text-3xl">
+                    <GiHamburgerMenu />
+                </button>
             </div>
-            <button onClick={()=> setBurgerActivate(!burgerActivate)} className='lg:hidden'><GiHamburgerMenu size={30}/></button>
-        </div>
-        <div className={`flex flex-col ${burgerActivate? '': 'hidden'}`}>
-            <ul className="flex flex-col md:flex-row text-center gap-4 pb-4">
-                <li><a href="./">Home</a></li>
-                <li><a href="./#projects">Projects</a></li>
-                <li><a href="./#experience">Experience</a></li>
-                <li><a href="./#course">Course</a></li>
-                <li><a href="./#skill">Skill</a></li>
-            </ul>
-            <button className="mb-4 mx-auto p-2 bg-blue-700 rounded-lg ">Resume</button>
-        </div>
-    </nav>
+
+            <div
+                onClick={chaneMenu}
+                className={`bg-gray-900/50 ${
+                    menuClick && "min-h-screen min-w-full fixed"
+                } top-0 left-0 backdrop-blur-sm`}
+            ></div>
+
+            <div
+                className={`bg-gray-900 shadow-xl shadow-blue-500 fixed top-0 right-0 transition-all duration-300 h-0 w-0 ${
+                    menuClick ? "h-3/4 w-5/6 md:w-1/2" : ""
+                } rounded-bl-3xl `}
+            >
+                <button onClick={chaneMenu} className="p-3 text-xl ">
+                    <AiOutlineClose />
+                </button>
+                <ul
+                    className={`flex flex-col justify-evenly h-full items-center pb-5 ${
+                        !menuClick && "hidden"
+                    }`}
+                >
+                    <LinkNavBar
+                        changeMenu={chaneMenu}
+                        link="/#i"
+                        text="I Am..."
+                    />
+                    <LinkNavBar
+                        changeMenu={chaneMenu}
+                        link="/#projects"
+                        text="Projects"
+                    />
+                    <LinkNavBar
+                        changeMenu={chaneMenu}
+                        link="/#skills"
+                        text="Skills"
+                    />
+                    <LinkNavBar
+                        changeMenu={chaneMenu}
+                        link="/#courses"
+                        text="Courses"
+                    />
+                </ul>
+            </div>
+        </nav>
+    );
 }
 export default NavBar;
