@@ -9,11 +9,11 @@ function NavBar() {
     const chaneMenu = () => setMenuClick(!menuClick);
 
     return (
-        <nav>
-            <div className="h-20  flex justify-between px-4 shadow-xl shadow-blue-500 bg-gray-900">
+        <nav className="sticky top-0 z-40">
+            <div className="h-20  flex justify-between px-4 shadow-lg shadow-blue-500 bg-gray-900">
                 <div className="flex items-center h-full">
                     <img className="h-3/5" src={iconImage} alt="Logo" />
-                    <span className="text-lg pl-2 font-bold">
+                    <span className="text-lg pl-2 font-bold md:text-2xl">
                         Franco Miguez
                     </span>
                 </div>
