@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function IconSkills({ Icon, sizeNormal, sizeBig, color, shadowColor }) {
-    const [size, setSize] = useState(sizeNormal);
+function IconSkills({ Icon, color, shadowColor }) {
     const newStyle = (color, shadowColor) => {
         return {
             fill: color,
@@ -13,10 +12,8 @@ function IconSkills({ Icon, sizeNormal, sizeBig, color, shadowColor }) {
     return (
         <>
             <Icon
-                onMouseOut={() => setSize(sizeNormal)}
-                onMouseOver={() => setSize(sizeBig)}
-                size={size}
                 style={newStyle(color, shadowColor)}
+                className="text-[60px] hover:text-[100px] md:text-[120px] md:hover:text-[200px]"
             />
         </>
     );

@@ -10,7 +10,7 @@ function NavBar() {
 
     return (
         <nav className="sticky top-0 z-40">
-            <div className="h-20  flex justify-between px-4 shadow-lg shadow-blue-500 bg-gray-900">
+            <div className="h-20  flex justify-between px-4 shadow-lg shadow-cyan-500 bg-gray-900">
                 <div className="flex items-center h-full">
                     <img className="h-3/5" src={iconImage} alt="Logo" />
                     <span className="text-lg pl-2 font-bold md:text-2xl">
@@ -30,7 +30,7 @@ function NavBar() {
             ></div>
 
             <div
-                className={`bg-gray-900 shadow-xl shadow-blue-500 fixed top-0 right-0 transition-all duration-300 h-0 w-0 ${
+                className={`bg-gray-900 shadow-xl shadow-cyan-500 fixed top-0 right-0 transition-all duration-300 h-0 w-0 ${
                     menuClick ? "h-3/4 w-5/6 md:w-1/2" : ""
                 } rounded-bl-3xl `}
             >
