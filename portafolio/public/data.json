@@ -1,49 +1,63 @@
 {
     "projects":[
         {
+            "id":0,
             "title":"CV",
             "create":"2022/06/15",
             "image":"https://lh3.googleusercontent.com/pw/AJFCJaW7CMy8cG11F3QSFaPvN_ADUB9yJ20KbIWbAkPb2UORBwzg8g7jnPLX5PG4crRHBq6AfyaOKGIpzcQcPYdkTE4b_3pbzyKqkainJoiK7-iJMiE2math8jfU8fwdNxdHDgI3eNuIwfI7HJE1yjoUcNZq=w1366-h662-s-no?authuser=0",
             "description":"This was my first portfolio created using frontend technologies like HTML, CSS, and Bootstrap. At that time, my knowledge was very basic as I had just completed a full-stack course. During the course, which was conducted by the T.tec program at Egg, I learned the fundamentals of frontend technologies such as HTML5, CSS3, JavaScript, and Bootstrap. Additionally, I also learned how to work with the backend using Java and Spring Boot. One notable aspect of the course was that it allowed us to work in teams in different groups, which changed in every class.",
             "languages":["CSS","HTML"],
-            "link_github":"https://github.com/Franco-Miguez/CV",
-            "link_page":"https://franco-miguez.github.io/CV/"
+            "links":{
+            "github":"https://github.com/Franco-Miguez/CV",
+            "page":"https://franco-miguez.github.io/CV/"}
         },
         {
+            "id":1,
             "title":"See Image",
             "create":"2022/11/16",
             "image":"https://lh3.googleusercontent.com/pw/AJFCJaWPnoubYjklIGiaii_oRXzvnBPn5JVZt7Ms-5lBN8soommqRpFJDJz-K-2G9IqJuhC91IM8X-tMNn7Z39t7RaWY-zWUSNRxX9-8YMgfLZnaV4WptEgYudI0cviBVRGOzakBcicj7zEvhTkrjbcQQGmW=w733-h666-s-no?authuser=0",
             "description":"I created this project for a basic Python programming course that I taught for the Topiarte civil association. The course covered the fundamentals of Python and an introduction to graphical user interfaces (GUIs). As the final project, I proposed creating a program that could display images and allow for modifications. It was a new experience for me, and I learned a lot from the challenges that arose during the course, which helped me grow and overcome obstacles.",
             "languages":["Python"],
-            "link_github":"https://github.com/Franco-Miguez/See-Image",
-            "link_page":""
+            "links":{
+            "github":"https://github.com/Franco-Miguez/See-Image",
+            "page":""
+            }
         },
         {
+            "id":2,
             "title":"Portafolio Django",
             "image":"https://lh3.googleusercontent.com/pw/AJFCJaXdffrwPEKrv5EanetuJT0u6W4n96bHyNdpfwGD6w7c38_j1s7doFmPSgidjVZknUPd2gZPxu5SdDLKaIYLI6K_GxYwAd6ctaKqb2aZe-jJ1RAetWirLd_SAriaDSoztqKkmhUZQaks303hVh6Ox7Zx=w1364-h666-s-no?authuser=0",
             "create":"2023/01/08",
             "description":"I decided to create this portfolio after learning Django in a Udemy course, which covered the basics of Python, HTML, CSS, Tkinter, and Django. The course was interesting, but the most exciting part was learning about the Django framework, which was my first experience with it.",
             "languages":["Python","Django","HTML","CSS"],
-            "link_github":"https://github.com/Franco-Miguez/portafolio",
-            "link_page":""
+            "links":{
+            "github":"https://github.com/Franco-Miguez/portafolio",
+            "page":""
+            }
         },
         {
+            "id":3,
             "title":"I Sales",
             "image":"https://lh3.googleusercontent.com/pw/AJFCJaU0FMZFe1y2d3cBqTDt0Rye3EHbPK0rf-44OJhew3NUsSq_UfyrmxmpJy2AusKzlir30cNdNCWWszxW1KpA3ifqQuerfdk0iip4ffV8OK5CwD3wAsA3Sui1BEkSbdJ5mTTB-X9-sHK69CmBzhP4qFry=w873-h666-s-no?authuser=0",
             "create":"2022/12/03",
             "description":"I created this program for a local store called Zona Urbana, which sells clothing. They needed a simple program to manage their stock and calculate the change for cash transactions. To develop it, I used my knowledge of Python, the customTkinter library for the interface, and Peewee for managing and creating the database. I decided to use SQLite for the database since the program will only be used in one store and on a single computer.",
             "languages":["Python","SQLite"],
-            "link_github":"https://github.com/Franco-Miguez/I_sales",
-            "link_page":""
+            "links":{
+            "github":"https://github.com/Franco-Miguez/I_sales",
+            "page":""
+            }
         },
         {
+            "id":4,
             "title":"",
             "image":"",
             "create":"",
             "description":"",
             "languages":[],
-            "link_github":"",
-            "link_page":""
+            "links":{
+            "github":"",
+            "page":""
+            }
         }
     ]
 }
