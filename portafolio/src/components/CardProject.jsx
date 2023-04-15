@@ -7,6 +7,7 @@ import {
     SiPython,
     SiJson,
     SiTailwindcss,
+    SiDjango,
 } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 import { BsBootstrapFill } from "react-icons/bs";
@@ -31,6 +32,7 @@ function CardProject({img, title, description, languages, links, id, create}) {
       case "HTML": return <AiFillHtml5/>
       case "React": return <DiReact/>
       case "Bootstrap": return <BsBootstrapFill/>
+      case "Django": return <SiDjango/>
     }
   }
 
