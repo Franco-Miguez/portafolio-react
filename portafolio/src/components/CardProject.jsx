@@ -53,7 +53,7 @@ function CardProject({img, title, description, languages, links, id, create}) {
         </section>
         <footer className="bg-gray-950  rounded-b-xl w-full">
             <div className="py-2 border-b-2 border-white text-3xl flex justify-center gap-5">
-              {languages.map((value)=> languagesIcon(value))}
+              {languages.map((value,index)=> <div key={index}>{languagesIcon(value)}</div>)}
             </div>
             <div className="py-2">
               <ul className='flex justify-center text-5xl'>

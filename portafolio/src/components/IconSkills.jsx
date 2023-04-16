@@ -13,7 +13,7 @@ function IconSkills({ Icon, color, shadowColor }) {
         <>
             <Icon
                 style={newStyle(color, shadowColor)}
-                className="text-[60px] hover:text-[100px] md:text-[120px] md:hover:text-[200px]"
+                className="text-[100px] scale-75 hover:scale-100 md:text-[200px]"
             />
         </>
     );
