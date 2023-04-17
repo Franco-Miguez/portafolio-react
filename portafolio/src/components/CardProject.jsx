@@ -1,16 +1,7 @@
 import {useState} from 'react'
 import {BiLink} from 'react-icons/bi'
-import {AiFillGithub, AiFillHtml5} from 'react-icons/ai'
-import {
-    SiCss3,
-    SiJavascript,
-    SiPython,
-    SiJson,
-    SiTailwindcss,
-    SiDjango,
-} from "react-icons/si";
-import { DiReact } from "react-icons/di";
-import { BsBootstrapFill } from "react-icons/bs";
+import {AiFillGithub} from 'react-icons/ai'
+import LanguagesIcon from './LanguagesIcon'
 
 function CardProject({img, title, description, languages, links, id, create}) {
 
@@ -21,22 +12,6 @@ function CardProject({img, title, description, languages, links, id, create}) {
       return `${text.substr(0,100)}...`
     }else return text
   }
-
-  const languagesIcon = (name)=>{
-    switch(name){
-      case "Python": return <SiPython/>
-      case "Javascript": return <SiJavascript/>
-      case "CSS": return <SiCss3/>
-      case "Json": return <SiJson/>
-      case "Tailwindcss": return <SiTailwindcss/>
-      case "HTML": return <AiFillHtml5/>
-      case "React": return <DiReact/>
-      case "Bootstrap": return <BsBootstrapFill/>
-      case "Django": return <SiDjango/>
-    }
-  }
-
-
 
   return (
     <div id={id} className={`bg-gray-900  w-3/4  rounded-xl shadow-md hover:shadow-lg hover:shadow-cyan-600 shadow-red-500 flex flex-col items-center transition-transform duration-500 scale-95 hover:scale-100 ${clickShowMore? "sm:w-full" :"sm:w-64"}`}>
@@ -51,9 +26,9 @@ function CardProject({img, title, description, languages, links, id, create}) {
               {clickShowMore?"Show Less": "Show More"}
             </a>
         </section>
-        <footer className="bg-gray-950  rounded-b-xl w-full">
-            <div className="py-2 border-b-2 border-white text-3xl flex justify-center gap-5">
-              {languages.map((value,index)=> <div key={index}>{languagesIcon(value)}</div>)}
+        <footer className="bg-gray-950  rounded-b-xl w-full mt-auto">
+            <div className="py-2 border-b-2 border-white text-3xl flex justify-center gap-5 flex-wrap">
+              {languages.map((value,index)=> <div key={index}><LanguagesIcon name={value} shadow={true}/></div>)}
             </div>
             <div className="py-2">
               <ul className='flex justify-center text-5xl'>
