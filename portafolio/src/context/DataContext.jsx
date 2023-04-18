@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from "react";
 export const DataContext = createContext();
 
 export function DataContextProvider(props) {
-    const [data, setData] = useState({projects:[],skills:[]});
+    const [data, setData] = useState({projects:[],skills:[],courses:[]});
 
     useEffect(() => {
         async function fetchData() {

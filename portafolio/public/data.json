@@ -96,5 +96,34 @@
             }
         }
     ],
-    "skills":["Python","Json","Django","HTML","Javascript","CSS","React","Tailwindcss","Bootstrap"]
+    "skills":["Python","Json","Django","HTML","Javascript","CSS","React","Tailwindcss","Bootstrap"],
+    "courses":[
+        {
+            "id":0,
+            "title":"Primeros pasos del desarrollo frontend",
+            "image":"https://static.wixstatic.com/media/77d9b2_120987c7a5e34959948d74bdb5917037~mv2.png/v1/fill/w_196,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_master_fondo_transp.png",
+            "start":"2022/12/01",
+            "end":"2023/01/01",
+            "languages":["Javascript","HTML","CSS","Bootstrap","GitHub"],
+            "link":"https://drive.google.com/file/d/1N_10BlS-98dawkDcuyw3hcfoTBDoThk2/view?usp=sharing"
+        },
+        {
+            "id":1,
+            "title":"Desarrollador Web Front End",
+            "image":"//mindhublab.com/pluginfile.php/1/theme_moove/logo/1666730329/Logo%20blanco%20peque%C3%B1o-21.png",
+            "start":"2023/01/01",
+            "end":"2023/04/01",
+            "languages":["HTML","CSS","Javascript","Json","Bootstrap","GitHub"],
+            "link":"https://www.credly.com/badges/8ecab82e-eb43-4ec8-8c8c-fcf352539b0d/linked_in_profile"
+        },
+        {
+            "id":2,
+            "title":"Python para principiantes",
+            "image":"https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+            "start":"2023/04/01",
+            "end":"2023/04/02",
+            "languages":["Python"],
+            "link":"https://learn.microsoft.com/es-es/training/achievements/learn.beginner-python.trophy?username=francomiguez-4121&sharingId=D65794EEE086D74D"
+        }
+    ]
 }

@@ -8,7 +8,7 @@ import {
     SiDjango,
 } from "react-icons/si";
 import { DiReact } from "react-icons/di";
-import { BsBootstrapFill } from "react-icons/bs";
+import { BsBootstrapFill, BsGithub } from "react-icons/bs";
 
 function LanguagesIcon({name, shadow}) {
     const green = ["#166534","#bbffd3"]
@@ -35,6 +35,12 @@ function LanguagesIcon({name, shadow}) {
                 style={{
                     fill: blue[0],
                     filter: `${shadow?`drop-shadow(0 0 .1em ${blue[1]})`: "none"}`}}
+                />;
+            case "GitHub":
+                return <BsGithub
+                style={{
+                    fill: "#000",
+                    filter: `${shadow?`drop-shadow(0 0 .1em #fff)`: "none"}`}}
                 />;
             case "Json":
                 return <SiJson
