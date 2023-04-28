@@ -1,4 +1,7 @@
-import {AiFillHtml5} from 'react-icons/ai'
+import {AiFillHtml5,
+        AiOutlineMail,
+        AiFillLinkedin,
+} from 'react-icons/ai'
 import {
     SiCss3,
     SiJavascript,
@@ -38,6 +41,18 @@ function LanguagesIcon({name, shadow}) {
                 />;
             case "GitHub":
                 return <BsGithub
+                style={{
+                    fill: "#000",
+                    filter: `${shadow?`drop-shadow(0 0 .1em #fff)`: "none"}`}}
+                />;
+            case "Email":
+                return <AiOutlineMail
+                style={{
+                    fill: "#000",
+                    filter: `${shadow?`drop-shadow(0 0 .1em #fff)`: "none"}`}}
+                />;
+            case "Linkedin":
+                return <AiFillLinkedin
                 style={{
                     fill: "#000",
                     filter: `${shadow?`drop-shadow(0 0 .1em #fff)`: "none"}`}}

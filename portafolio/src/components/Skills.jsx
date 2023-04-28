@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import TitleSection from "./TitleSection";
 import {DataContext} from '../context/DataContext'
-import LanguagesIcon from './LanguagesIcon'
+import LanguagesIcon from './Icon'
 
 function Skills() {
     const data = useContext(DataContext)

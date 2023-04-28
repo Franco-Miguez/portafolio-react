@@ -4,6 +4,7 @@ import Skills from "./components/Skills";
 import Header from './components/Header'
 import Projects from './components/Projects'
 import Course from './components/Course'
+import Footer from "./components/Footer"
 
 function App() {
     return <>
@@ -12,6 +13,7 @@ function App() {
         <Projects/>
         <Skills/>
         <Course/>
+        <Footer/>
     </>;
 }
 

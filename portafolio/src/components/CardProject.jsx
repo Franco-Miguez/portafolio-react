@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {BiLink} from 'react-icons/bi'
 import {AiFillGithub} from 'react-icons/ai'
-import LanguagesIcon from './LanguagesIcon'
+import LanguagesIcon from './Icon'
 
 function CardProject({img, title, description, languages, links, id, create}) {
 

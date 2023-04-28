@@ -1,7 +1,7 @@
 import TitleSection from './TitleSection'
 import {useContext} from 'react'
 import {DataContext} from '../context/DataContext'
-import LanguagesIcon from './LanguagesIcon'
+import LanguagesIcon from './Icon'
 import {SlBadge} from 'react-icons/sl'
 
 function course() {
