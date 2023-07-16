@@ -1,5 +1,6 @@
 {
     "projects":[
+
         {
             "id":0,
             "title":"CV",
@@ -94,6 +95,17 @@
             "github":"https://github.com/Franco-Miguez/portafolio-rest",
             "page":"https://franco-miguez.com"
             }
+        },
+        {
+            "id":8,
+            "title":"ADN Solution",
+            "create":"2023/06/15",
+            "image":"https://raw.githubusercontent.com/ADNWebSolutions/ADN-Solutions/master/assets/screenshots/screenshot_1.jpg",
+            "description":"This was my first project whit ADN Soulition created using frontend technologies like HTML, CSS, JS, ReactJS, Tallwindcss. in my team we passed the project writed on HTML CSS and JS to Reactjs and TalwindCSS",
+            "languages":["CSS","HTML","React","Javascript"],
+            "links":{
+            "github":"https://github.com/ADNWebSolutions/ADN-Solutions",
+            "page":"https://tsuramii.github.io/ADN-Solutions-Mockup/"}
         }
     ],
     "skills":["Python","Json","Django","HTML","Javascript","CSS","React","Tailwindcss","Bootstrap"],
